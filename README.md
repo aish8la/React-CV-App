@@ -1,12 +1,55 @@
-# React + Vite
+# React CV App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React application for creating and previewing a simple CV or resume. The app lets you edit personal details, manage education entries, and add or update work experience before viewing the final formatted CV.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Edit basic profile information such as name, email, and phone number
+- Add, update, and delete education entries
+- Add, update, and delete work experience entries
+- View a live CV preview alongside the editing form
+- Built with React and Vite for a lightweight frontend workflow
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- CSS
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the local URL shown in the terminal to use the app.
+
+## Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+- `src/App.jsx` – root application entry
+- `src/components/` – CV form and preview components
+- `src/logic/dataHandlers.js` – default CV data and helper functions
+- `src/styles/` – application styling
+
+## Notes
+
+This project uses a simple in-memory data model for the CV content, so the app is ideal for learning React state management and form-driven UI patterns.
